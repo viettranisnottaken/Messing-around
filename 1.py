@@ -34,7 +34,8 @@ import random
 a = random.randint (1,15)
 guess = 0
 count = 0
-print ('Guess which number I chose from 1 to 15?')
+print('Guess which number I chose from 1 to 15?')
+print('Type exit or Exit to stop playing')
 while guess != a and guess != 'exit' and guess != 'Exit':
     guess = input('Make a wild guess: ')
     count += 1
