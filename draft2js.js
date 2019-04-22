@@ -27,3 +27,14 @@ function addition(x, y) {
 };
 
 document.getElementById('two').innerHTML = addition(4,2);
+
+
+
+// var flNum = 7.7563, flNum2 = flNum.toFixed(2);
+// document.getElementById('twelve').innerHTML = flNum2;
+
+var flNum = 7.7563;
+document.getElementById('hehehe').innerHTML = flNum.toFixed(0) + " " +
+  flNum.toFixed(1) + " " + flNum.toFixed(2) + " " + flNum.toFixed(6);
+
+document.getElementById('eleven').innerHTML = txt;
