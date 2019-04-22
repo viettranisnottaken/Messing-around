@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>For Fun</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+
+
+    <p id="one"></p>
+    <h1 id="two"></h1>
+    <h2 id="three"></h2>
+    <p id="four"></p>
+    <script type="text/javascript">
+      var x = 3, y = 4, z = x + y;
+      document.getElementById('one').innerHTML = z;
+    </script>
+
+    <script type="text/javascript">
+      var a, b, c;
+      a = 2,
+      b = 4,
+      c = 6;
+      document.getElementById('two').innerHTML = a + b + c;
+    </script>
+
+    <script type="text/javascript">
+      function addition(a, b, c) {
+        return a + b + c;
+      }
+      document.getElementById('three').innerHTML = addition(4, 5, 9) + "<br>" + typeof a;
+    </script>
+
+    <script type="text/javascript">
+      var person = {
+        firstName: "Viet",
+        lastName: "Tran",
+        age: addition(10, 10, 2),
+      };
+      document.getElementById('four').innerHTML = person.firstName + ' ' + person.lastName + ' ' + person.age;
+
+    </script>
+  </body>
+</html>
