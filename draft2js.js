@@ -62,9 +62,16 @@ function wheelOfFortune() {
       y ="You won: A keyboard with two thirds of the keys ripped out!";
       break;
     case 6:
-      y = "You won: A teacher whose initials are TD!";
+      y = "You won: A teacher whose initials are CD!";
       break;
     default: y = "Lol u can't even win. Go cry.";
   };
   window.alert(y);
 };
+
+prompt("This is prompt()");
+
+function yoMoney() {
+  var money = prompt("How much do you want in $?");
+  window.alert("Alright here's your " + money +"$");
+}
