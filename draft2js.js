@@ -75,3 +75,30 @@ function yoMoney() {
   var money = prompt("How much do you want in $?");
   window.alert("Alright here's your " + money +"$");
 }
+
+function oneToTenEven() {
+  var x = 0;
+  while (x <= 10) {
+    if (x % 2 == 0) {
+      console.log(x);
+    };
+    x = x + 1;
+  };
+};
+
+// function oneToTenEven() {
+//   var x = 0;
+//   while (x <= 10 && x % 2 == 0) {
+//     console.log(x);
+//     x += 1;
+//   };
+// };
+//This is wrong because as soon as any one of the conditions is not met, the loop stops
+
+function helloSomeone(name = "Viet Tran") {
+  console.log("Hello " + name);
+};
+
+function helloSomeone(name = "Viet Tran") {
+  return "Hello " + name;
+};
