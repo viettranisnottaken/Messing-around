@@ -102,3 +102,5 @@ function helloSomeone(name = "Viet Tran") {
 function helloSomeone(name = "Viet Tran") {
   return "Hello " + name;
 };
+
+ // hehehe
