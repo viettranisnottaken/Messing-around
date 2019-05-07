@@ -3,12 +3,15 @@ document.getElementById('one').innerHTML = backslash + backslash2;
 
 var txt = "I can eat bananas all day can eat bananas";
 var a = txt.slice (11, -8);
-document.getElementById('six').innerHTML = txt.substring (11, 17); //substring (begin, end) but no negative
-document.getElementById('seven').innerHTML = txt.substr (6, 3); //substr(beginning, length)
+document.getElementById('six').innerHTML = txt.substring (11, 17);
+//substring (begin, end) but no negative
+document.getElementById('seven').innerHTML = txt.substr (6, 3);
+//substr(beginning, length)
 var b = txt.toUpperCase();
 document.getElementById('three').innerHTML = a + " " + "and " + b;
 document.getElementById('four').innerHTML = txt.indexOf("eat");
-document.getElementById('five').innerHTML = txt.lastIndexOf("eat");
+// document.getElementById('five').innerHTML = txt.lastIndexOf("eat");
+document.querySelector("#five").innerHTML = txt.lastIndexOf("eat");
 
 document.getElementById('eight').innerHTML = txt;
 function replace() {
@@ -103,4 +106,22 @@ function helloSomeone(name = "Viet Tran") {
   return "Hello " + name;
 };
 
- // hehehe
+var object1 = {a: "nnneene", b: 2, c: "pleplepl", d: 3}
+console.log(object1.a);
+console.log(object1["b"]);
+
+
+
+function Person(fn, ln) {
+	this.first_name = fn;
+	this.last_name = ln;
+
+	this.displayName = function() {
+		console.log(`Name: ${this.first_name} ${this.last_name}`);
+	}
+}
+
+let person = new Person("John", "Reed");
+person.displayName();  // Prints Name: John Reed
+let person2 = new Person("Paul", "Adams");
+person2.displayName();  // Prints Name: Paul Adams
