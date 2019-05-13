@@ -31,22 +31,16 @@ function scrambleString () {
 // var r = function (num1, num2) { return num1 + num2 }
 // window.alert(r(1, 3))
 
-function asd(answer, give) {
-  var result
-  if (answer) {
-    result = give
-  } else {
-    window.alert('Alright you can mess with the rest of the page lol')
-  }
-}
-
-function confirmButtDetonation() {
+function confirmButtDetonation () {
+  // You dont have to nest the if like this, another way to to do this is to leave the action section blank
+  // then move to the next if
   var confirmMessage = 'Do you really want to do this?'
   var confirmMessage2 = 'You are fully aware that they can no longer hold feces in their bowels, correct?'
   var confirmMessage3 = 'This can also be fatal for most, if not all human beings. Are you totally positive?'
   var confirmMessage4 = 'This is not a joke, you cold-blooded bastard'
   if (window.confirm(confirmMessage)) {
     // window.confirm(confirmMessage2)
+    // window.confirm() executes regardless of where it is, so it should not be repeated
     if (window.confirm(confirmMessage2)) {
       if (window.confirm(confirmMessage3)) {
         if (window.confirm(confirmMessage4)) {
