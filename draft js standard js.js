@@ -31,20 +31,36 @@ function scrambleString () {
 // var r = function (num1, num2) { return num1 + num2 }
 // window.alert(r(1, 3))
 
+function asd(answer, give) {
+  var result
+  if (answer) {
+    result = give
+  } else {
+    window.alert('Alright you can mess with the rest of the page lol')
+  }
+}
+
 function confirmButtDetonation() {
   var confirmMessage = 'Do you really want to do this?'
   var confirmMessage2 = 'You are fully aware that they can no longer hold feces in their bowels, correct?'
   var confirmMessage3 = 'This can also be fatal for most, if not all human beings. Are you totally positive?'
   var confirmMessage4 = 'This is not a joke, you cold-blooded bastard'
-  if (window.confirm(confirmMessage) === true) {
-    window.confirm(confirmMessage2)
-  } if (window.confirm(confirmMessage2) === true) {
-    window.confirm(confirmMessage3)
-  } if (window.confirm(confirmMessage3) === true) {
-    window.confirm(confirmMessage4)
-  } if (window.confirm(confirmMessage4) === true) {
-    window.alert('You are what happens when the Avengers successfully stops Thanos')
+  if (window.confirm(confirmMessage)) {
+    // window.confirm(confirmMessage2)
+    if (window.confirm(confirmMessage2)) {
+      if (window.confirm(confirmMessage3)) {
+        if (window.confirm(confirmMessage4)) {
+          window.confirm('This is what happens when Thanos fails')
+        } else {
+          window.alert('Okay you can mess with the rest of the page')
+        }
+      } else {
+        window.alert('Okay you can mess with the rest of the page')
+      }
+    } else {
+      window.alert('Okay you can mess with the rest of the page')
+    }
   } else {
-    window.alert('Alright you can mess with the rest of the page lol')
+    window.alert('Okay you can mess with the rest of the page')
   }
 }
