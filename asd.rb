@@ -32,3 +32,9 @@ class Box
     @width = width
   end
 end
+
+box1 = Box.new
+box1.width = 17
+box1.height = 20
+
+puts box1.getWidth
