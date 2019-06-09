@@ -38,3 +38,4 @@ box1.width = 17
 box1.height = 20
 
 puts box1.getWidth
+puts box1.getHeight
