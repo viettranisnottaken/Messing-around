@@ -15,3 +15,20 @@ class Character
 end
 
 character1 = Character.new(12, 50)
+class Box
+  def initialize(width, height)
+    @width = width
+    @height = height
+  end
+
+  def getWidth
+    @width
+  end
+  def getHeight
+    @height
+  end
+
+  def setWidth=(width)
+    @width = width
+  end
+end
