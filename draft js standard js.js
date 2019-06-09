@@ -37,7 +37,7 @@ function confirmButtDetonation () {
   var confirmMessage = 'Do you really want to do this?'
   var confirmMessage2 = 'You are fully aware that they can no longer hold feces in their bowels, correct?'
   var confirmMessage3 = 'This can also be fatal for most, if not all human beings. Are you totally positive?'
-  var confirmMessage4 = 'This is not a joke, you cold-blooded bastard'
+  var confirmMessage4 = 'Let shit fly up your friend\'s mouth I guess'
   if (window.confirm(confirmMessage)) {
     // window.confirm(confirmMessage2)
     // window.confirm() executes regardless of where it is, so it should not be repeated
